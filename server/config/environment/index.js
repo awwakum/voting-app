@@ -8,6 +8,8 @@ var _ = require('lodash');
 var all = {
   env: process.env.NODE_ENV,
 
+  uri: 'mongodb://localhost/voting-app-db',
+  
   // Root path of server
   root: path.normalize(__dirname + '/../../..'),
 
@@ -42,3 +44,5 @@ var all = {
   all,
   require('./' + process.env.NODE_ENV + '.js') || {});
 */
+
+module.exports = all;
