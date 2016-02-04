@@ -11,7 +11,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var config = require('./config/environment');
 
-mongoose.connect('mongodb://localhost/voting-app-db');
+mongoose.connect('mongodb://awwakum:voteapp@ds055865.mongolab.com:55865/voteapp');
 mongoose.connection.on('error', function(err) {
   console.error('MongoDB connection error: ' + err);
   process.exit(-1);
