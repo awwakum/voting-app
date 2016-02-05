@@ -30,6 +30,7 @@ module.exports = function(app) {
   app.use(methodOverride());
   app.use(cookieParser());
   app.use(passport.initialize());
+  app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 
   if ('production' === env) {
