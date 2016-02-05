@@ -1,4 +1,4 @@
-# fcc-voting-app
+# voting-app
 MEAN stack voting app
 
 User stories:
